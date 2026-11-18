@@ -1,0 +1,24 @@
+import { Router } from 'express';
+import auth from './authRoutes.js';
+import users from './userRoutes.js';
+import products from './productRoutes.js';
+import warehouses from './warehouseRoutes.js';
+import stock from './stockRoutes.js';
+import transactions from './transactionRoutes.js';
+import orders from './orderRoutes.js';
+import supply from './supplyRequestRoutes.js';
+import upload from './uploadRoutes.js';
+import stats from './statsRoutes.js';
+
+const r = Router();
+r.use('/auth', auth);
+r.use('/users', users);
+r.use('/products', products);
+r.use('/warehouses', warehouses);
+r.use('/stock', stock);
+r.use('/transactions', transactions);
+r.use('/orders', orders);
+r.use('/supply-requests', supply);
+r.use('/upload', upload);
+r.use('/stats', stats);
+export default r;

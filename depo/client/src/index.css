@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-canvas: #F5F5F2;
+  --color-line: #E4E4DF;
+  --color-forest: #1B4332;
+  --color-bronze: #C87D32;
+  --color-ink: #111315;
+  --color-mute: #686D76;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible { outline: 2px solid var(--color-forest); outline-offset: 2px; }
